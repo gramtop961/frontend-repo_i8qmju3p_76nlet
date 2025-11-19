@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flames App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>Alles In Farbe – Gordon Nehls</title>
+    <meta name="description" content="Alles In Farbe – Ihr Malerbetrieb in Hamburg. Innen- und Außenanstrich, Fassadengestaltung, Tapezierarbeiten, Lackieren. Jetzt Beratung anfragen!" />
+    <meta property="og:title" content="Alles In Farbe – Gordon Nehls" />
+    <meta property="og:description" content="Zuverlässiger Malerbetrieb für Hamburg & Umgebung. Qualität, Sauberkeit, Termintreue." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-cover.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Simple analytics (pageview)
+      (function(){
+        try {
+          const data = { path: location.pathname, ts: Date.now(), ua: navigator.userAgent }
+          localStorage.setItem('aif-analytics-last', JSON.stringify(data))
+        } catch(e) {}
+      })()
+    </script>
   </body>
 </html>
